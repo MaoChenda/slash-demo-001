@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+}
+.header{
+    position: relative;
+}
+.cover-img{
+    width: 100%;
+}
+.cover-img img{
+    width: 100%;
+    height: 690px;
+}
+.navbar{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+.navbar ul li a:hover{
+    color: white;
+    background-color: inherit;
+    font-size: 17px;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.logo span{
+    color: white;
+    padding: 10px;
+    margin-left: -5px;
+    border-right: none;
+    border: inset 1px;
+    border-radius: 7px;
+}
+.logo p{
+    color: white;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.page-description{
+    position: absolute;
+    width: 750px;
+    top: 450px;
+    left: 350px;
+}
+.page-description p{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.btnQuoteRequest{
+    position: absolute;
+    top: 590px;
+    left: 620px;
+}
+.about p{
+    font-size: 15px;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+.aboutImage{
+    position: relative;
+}
+.aboutImage img{
+    width: 100%;
+    height: 370px;
+}
+.product-service h2{
+    color: yellow;
+    text-align: center;
+}
+.product-service hr{
+    text-align: center;
+    width: 100px;
+    border: 2px solid yellowgreen;
+}
+.footer-image{
+    margin-top: 50px;
+    position: relative;
+}
+.image-footer img{
+    opacity: 0.7;
+    width: 100%;
+    height: 310px;
+}
+.footer-image .footer-description{
+    position: absolute;
+    top: 140px;
+    left: 250px;
+    width: 750px;
+}
+.footer-description p{
+    text-align: center;
+    color: white;
+}
+.bntFooter{
+    position: absolute;
+    top: 250px;
+    left: 510px;
+}
+.follow-us{
+    margin-top: 30px;
+}
+.follow-us h3{
+    text-align: center;
+    color: yellow;
+}
+/*social button*/
+.socialButton{
+    text-align: center;
+}
+.fa {
+    padding: 8px;
+    font-size: 40px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 7px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.footer{
+    background-color: #1a1a1a;
+}
+.menu-footer{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.menu-footer a{
+    line-height: 120px;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.menu-footer a:hover{
+    color: #a3c2c2;
+}
+.copyRight{
+    background-color: black;
+    height: 40px;
+    line-height: 40px;
+
+}
+.copyRight p{
+    color: white;
+    text-align: center;
+}
