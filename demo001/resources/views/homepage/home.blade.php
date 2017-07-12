@@ -10,6 +10,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Styles -->
     <script src="{{asset('js/homepage.js')}}"></script>
@@ -137,7 +138,7 @@
                 </div>
             </div>
 
-            <hr style="width: 100px; border: 1px solid crimson; text-align: center; margin-bottom: 50px">
+            <hr style="width: 100px; border: 1px solid #ffffb3; text-align: center; margin-bottom: 50px">
 
             <div class="row">
 
@@ -167,7 +168,7 @@
 
             </div>
 
-            <hr style="width: 100px; border: 1px solid crimson; text-align: center; margin-bottom: 50px">
+            <hr style="width: 100px; border: 1px solid #ffffb3; text-align: center; margin-bottom: 50px">
 
             <div class="row">
                 <div class="col-md-8">
@@ -194,7 +195,7 @@
                 </div>
             </div>
 
-            <hr style="width: 100px; border: 1px solid crimson; text-align: center; margin-bottom: 50px">
+            <hr style="width: 100px; border: 1px solid #ffffb3; text-align: center; margin-bottom: 50px">
 
             <div class="row">
 
@@ -242,10 +243,10 @@
 
             <div class="follow-us">
                 <h3>Follow Us</h3>
-                <hr style="width: 100px; border: 1px solid crimson; text-align: center;">
                 <div class="socialButton">
                     <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
                     <a href="#" class="fa fa-youtube"></a>
                     <a href="#" class="fa fa-instagram"></a>
                 </div>
