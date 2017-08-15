@@ -15,3 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home','homeController@home');
+Route::get('/news','homeController@news');
+Route::get('/quote request','homeController@quoteRequest');
+Route::get('/contact us', 'homeController@contactUs');

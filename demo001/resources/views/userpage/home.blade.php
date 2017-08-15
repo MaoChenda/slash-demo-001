@@ -1,28 +1,5 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
-    <!-- Styles -->
-    <script src="{{asset('js/homepage.js')}}"></script>
-    <script type="text/javascript" src="{{asset('bootstrap-3.3.7-dist/js/jquery-3.2.1.js')}}"></script>
-    <script type="text/javascript" src="{{asset('bootstrap-3.3.7-dist/js/bootstrap.min.js')}}"></script>
-    <link rel="stylesheet" type="text/css" href="{{asset('bootstrap-3.3.7-dist/css/bootstrap.min.css')}}">
-    <link type="text/css" rel="stylesheet" href="{{asset('css/home.css')}}">
-
-    {{--Social Media button--}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body>
+@extends('userpage.main')
+@section('content')
 
 {{--Animation--}}
     <div class="animation">
@@ -116,51 +93,6 @@
         <div class="btnQuoteRequest ">
             <div class="btn btn-warning hidden-sm hidden-xs">Quote Request</div>
         </div>
-        {{--NavigationBar--}}
-        <nav class="navbar navbar-fixed-top">
-            <div class="navbar-header navbar-default" >
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <div class="logo">
-                    <img src="{{asset('web-comp/yellow-sea-logo-white-no-text.png')}}" alt="logo">
-                    <p>Yellow Sea Logistics Co.,Ltd</p>
-                </div>
-            </div>
-
-
-
-            <div class=" collapse navbar-collapse navbar-right " id="myNavbar" style="background-color:  #ffcc00;" >
-                <ul class="nav navbar-nav">
-                    <li id="myList" class="hidden-xs ">
-                        <a href="#"></a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="navbar-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-link" href="#">ABOUT US</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="navbar-link" href="#">PRODUCT & SERVICE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-link" href="#">NEWS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-link" href="#">QUOTE REQUEST</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-link" href="#">CONTACT US</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
 
     </div> <!--end class animation-->
 
@@ -206,7 +138,7 @@
 
         <div class="row" >
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <h3 style="color: #0099ff;margin-top: -10px">Intermodal Service</h3> <br>
+                <br><h3 style="color: #02add8;margin-top: -10px">Intermodal Service</h3> <br>
 
                 <p>
                     Our core product is to provide you the stable but qualified delivery service.
@@ -225,12 +157,12 @@
             </div>
         </div>
 
-        <hr style="width: 100px; border: 1px solid #ffffb3; text-align: center; margin-bottom: 50px">
+        <hr style="width: 100px; border: 1px solid #ffcc00; text-align: center; margin-bottom: 50px">
 
         <div class="row">
 
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 frieght-forwarding">
-                <h3 style="color: #0099ff;margin-top: -20px">Frieght Forwarding</h3> <br>
+               <br> <h3 style="color: #02add8;margin-top: -20px">Frieght Forwarding</h3> <br>
 
                 <p>
                     By Ocean or Air, FCL or LCL, we believe that we are the one for you.
@@ -253,11 +185,11 @@
 
         </div>
 
-        <hr style="width: 100px; border: 1px solid #ffffb3; text-align: center; margin-bottom: 50px">
+        <hr style="width: 100px; border: 1px solid #ffcc00; text-align: center; margin-bottom: 50px">
 
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                <h3 style="color: #0099ff;margin-top: -20px">Custom House Brokerage</h3> <br>
+                <br> <h3 style="color: #02add8;margin-top: -20px">Custom House Brokerage</h3> <br>
 
                 <p>
                     For ease of doing your trading business,we urge to provide you -
@@ -274,12 +206,12 @@
             </div>
         </div>
 
-        <hr style="width: 100px; border: 1px solid #ffffb3; text-align: center; margin-bottom: 50px">
+        <hr style="width: 100px; border: 1px solid #ffcc00; text-align: center; margin-bottom: 50px">
 
         <div class="row">
 
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 wiredhousing">
-                <h3 style="color: #0099ff;margin-top: -20px">Wiredhousing and Distribution</h3> <br>
+                <h3 style="color: #02add8;margin-top: -20px">Wiredhousing and Distribution</h3> <br>
 
                 <p>
                     Storage is crucially important for your cargos as it
@@ -317,39 +249,4 @@
             </div>
     </div>
 
-{{--Follow us social button--}}
-    <div class="jumbotron">
-
-        <div class="follow-us">
-            <h3>Follow Us</h3>
-            <hr style="width: 150px; border: 1px solid #ffd11a; text-align: center;">
-            <div class="socialButton">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google-plus"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </div>
-
-    </div>
-
-{{--Footer--}}
-    <div class="footer">
-
-        <div class="menu-footer">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Product & Service</a>
-            <a href="#">News</a>
-            <a href="#">Quote Request</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <hr style="text-align: center; width: 40%; border: none; background-image: linear-gradient( to right, transparent, #e8e8e8, transparent); height: 1px">
-        <div class="copyRight">
-            <p>&#169; 2017 Yellow Sea Logistics. All rights reserved Designed by <span style="color: white"> Flexitech.</span></p>
-        </div>
-
-    </div> <!--end class resturantFooter-->
-
-</body>
+@endsection
