@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo Bootstrap Task4</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- Styles -->
+    <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="task4.css">
+    <!--Social Media button-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .input-group {
+            position: relative;
+            display: table;
+            border-collapse: separate;
+        }
+        .list-group{
+
+        }
+        .list-group a:first-child{
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .list-group a:last-child{
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .list-group a{
+            width: 100%;
+            padding: 10px 15px;
+            display: block;
+            position: relative;
+            color: gray;
+            border: 1px solid gainsboro;
+        }
+        .list-group a:hover{
+            text-decoration: none;
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Nav item 1</a></li>
+                <li><a href="#">Nav item 2</a></li>
+                <li><a href="#">Nav item 3</a></li>
+                <li><a href="#">Nav item 4</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="page-header">
+            <h1>Blog post title</h1>
+            <p>
+                Posted by <span class="glyphicon glyphicon-user" style="color: black"></span>
+                <a href="#"> Matthijs Jansen</a> on
+                <span class="glyphicon glyphicon-time"></span>12 January 2015 10:00 am
+
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="image">
+                    <img class="img-responsive" src="responsiveImage.PNG" style="width: 100%">
+                    Caption here
+                </div>
+                <div class="paragraph">
+                    <h4 style="margin-top: 50px">
+                        Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod
+                        tinunt ut laoreet dolore magna aliquam erat volut. Ut wisi enim ad minim veniam, quis nostrud
+                        exerci tation ullamcorper.
+                    </h4>
+                    <p>
+                        Vivamus risus ex, varius et libero quis, placerat rhoncus mi. Aenean sit amet aliquam nibh.
+                        Aliquam tortor est, consequat vitae libero at, vehicula mattis tellus. In condimentum consequat
+                        tempor. Nullam at lorem semper, ultricies mi et, mollis turpis. Mauris ut leo ac magna dapibus
+                        luctus. Mauris mi nibh, ornare et ipsum vel, finibus molestie nulla. Nunc eleifend leo eget
+                        ipsum pellentesque, vel varius ipsum placerat. Mauris tincidunt sapien et efficitur commodo.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec
+                        at pellentesque arcu. Pellentesque justo enim, porttitor a arcu non, mollis venenatis felis.
+                    </p>
+                    <p>
+                        Praesent viverra pellentesque enim, vitae porta erat elementum quis. Maecenas posuere mattis
+                        velit rutrum iaculis. Duis non efficitur nibh. Aliquam laoreet risus a nulla auctor interdum.
+                        Ut cursus leo eu justo laoreet porttitor. Pellentesque habitant morbi tristique senectus et
+                        netus et malesuada fames ac turpis egestas. Suspendisse vitae nisi dictum, vulputate odio sed,
+                        blandit tortor. Fusce eu turpis ut mi porta bibendum nec eu libero.
+                    </p>
+                    <p>
+                        Praesent libero sem, feugiat dapibus mattis et, vehicula eu turpis. In vitae consequat leo,
+                        quis venenatis justo. Fusce auctor bibendum aliquet. Nullam eu mi lectus. Maecenas risus mauris,
+                        feugiat nec ullamcorper non, efficitur et elit. Sed porta tellus ut aliquam auctor. Vivamus id
+                        lectus sed tellus cursus sodales sit amet a velit.
+                    </p>
+                    <p>
+                        Quisque eu aliquam leo. Sed feugiat nulla massa, a faucibus nulla sagittis eget. Donec ullamcorper
+                        tincidunt risus et pharetra. Vivamus tristique dui metus, vitae gravida nisl volutpat eu.
+                        Vivamus dapibus leo sit amet metus luctus dapibus. Vivamus sodales tempor elit, at pellentesque
+                        elit eleifend sit amet. Aliquam erat volutpat.
+                    </p>
+                </div>
+                <hr>
+                <div class="comment">
+                    <h2>Comments</h2>
+                </div>
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                            <img class="img-responsive" src="responsiveImage.PNG" style="width: 80%; height: 120px">
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                            <h3 style="margin: 0">
+                                <a href="#">Mayahuel Rodriguez</a>
+                            </h3>
+                            <p style="font-size: 12px">
+                                <a href="#">12 January 2015 11:13 pm</a>
+                            </p>
+                            <p style="font-size: 14px">
+                                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam
+                                nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut
+                            </p>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>Upvote
+                            </button>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-thumbs-down"></span>Downvote
+                            </button>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-comment"></span>Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                            <img class="img-responsive" src="responsiveImage.PNG" style="width: 80%; height: 120px">
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                            <h4 style="margin: 0">
+                                <a href="#">Mayahuel Rodriguez</a>
+                            </h4>
+                            <p style="font-size: 11px">
+                                <a href="#">12 January 2015 11:13 pm</a>
+                            </p>
+                            <p style="font-size: 14px">
+                                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam
+                                nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut
+                            </p>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>Upvote
+                            </button>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-thumbs-down"></span>Downvote
+                            </button>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-comment"></span>Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                            <img class="img-responsive" src="responsiveImage.PNG" style="width: 80%; height: 120px">
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                            <h4 style="margin: 0">
+                                <a href="#">Mayahuel Rodriguez</a>
+                            </h4>
+                            <p style="font-size: 11px">
+                                <a href="#">12 January 2015 11:13 pm</a>
+                            </p>
+                            <p style="font-size: 14px">
+                                Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam
+                                nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut
+                            </p>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>Upvote
+                            </button>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-thumbs-down"></span>Downvote
+                            </button>
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-comment"></span>Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2>Leave Comments</h2>
+                <p>
+                    Please keep in mind that comments are moderated and rel="nofollow" is in use. So,
+                    please do not use a spammy keyword or a domain as your name, or else it will be deleted. Thank you!
+                </p>
+                <div class="jumbotron">
+                    <form class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" style="margin-bottom: 10px">
+                        <label for="email">Email:</label>
+                        <input type="text" name="name" id="email" class="form-control" placeholder="Enter your email" style="margin-bottom: 10px">
+                        Make sure you use a valid email address<br><br>
+                        <label for="comment">Comments:</label>
+                        <textarea typeof="text" id="comment" class="form-control" style="margin-bottom: 10px"></textarea>
+                    </form>
+                </div>
+                <hr>
+                <div class="nextPrevious" style="padding-bottom: 50px">
+                    <ul style="list-style-type: none">
+                        <li style="float: left; margin-left: -35px">
+                            <button class="btn btn-default" style="border-radius: 20px">
+                                <a href="#" style="color: dodgerblue">
+                                    <span class="glyphicon glyphicon-menu-left"></span>Older
+                                </a>
+                            </button>
+                        </li>
+                        <li style="float: right">
+                            <button class="btn btn-default" style="border-radius: 20px">
+                                <a href="#" style="color: dodgerblue">
+                                    Newer<span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="jumbotron">
+                    <h4 style="margin-top: -30px; margin-left: -20px">Search</h4>
+                    <form>
+                        <div class="input-group">
+                        <input type="search" class="form-control">
+                        <span class="input-group-btn">
+                            <button class=" btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="list-group">
+                    <a href="#" style="background-color: dodgerblue; color: white">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3</a>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Sidebar panel widget
+                    </div>
+                    <div class="panel-body">
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                        lobortis nisl ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        Sidebar panel widget
+                    </div>
+                    <div class="panel-body">
+                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                        lobortis nisl ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="footer">
+            <p style="margin-top: 50px; margin-bottom: 50px">Copyright © Sitename 2015</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

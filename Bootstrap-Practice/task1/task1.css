@@ -1,0 +1,61 @@
+body{
+    font-size: 15px;
+}
+.header{
+    background-color: gainsboro;
+    width: 100%;
+}
+.header h1{
+    margin: 0;
+    padding: 30px;
+}
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+@media screen and (max-width: 767px) {
+    .navbar-inverse .navbar-nav li a {
+        border-bottom: 1px solid silver;
+    }
+}
+.page-header{
+    margin: 0;
+}
+.unstyledList ul{
+    list-style: none;
+}
+.inlineList ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: -5px;
+    /*display: block;*/
+}
+.inlineList ul li {
+    display: inline;
+
+}
+blockquote{
+    padding: 1em 2em;
+    border-left: 5px solid gainsboro;
+}
+.btn-info{
+    background-color: blue;
+}
+.btn-info:hover{
+    background-color: green;
+}
+.table{
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+.footer p{
+    color: white;
+    padding: 2em 3em;
+}
+a:hover{
+    color: limegreen;
+}

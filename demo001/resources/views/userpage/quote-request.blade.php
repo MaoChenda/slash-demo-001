@@ -1,4 +1,5 @@
 @extends('userpage.main')
+@section('title', 'Request Quote Form')
 @section('content')
 
     <div class="quotePicture">

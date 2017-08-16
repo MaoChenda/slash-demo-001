@@ -1,4 +1,5 @@
 @extends('userpage.main')
+@section('title', 'Landing Page')
 @section('content')
 
 {{--Animation--}}
@@ -90,15 +91,15 @@
         </div>
 
         {{--Button Quote Request--}}
-        <div class="btnQuoteRequest ">
+        <div class="btnQuoteRequest" id="about">
             <div class="btn btn-warning hidden-sm hidden-xs">Quote Request</div>
         </div>
-
     </div> <!--end class animation-->
 
 {{--About Section--}}
     <div class="jumbotron">
         <div class="aboutDescription">
+            {{--<div class="aboutlink" id="about"></div>--}}
             {{--<div class="container">--}}
             <h3>About <span style="color: yellow"> Yellowsea Logistic</span></h3> <br>
 
@@ -127,6 +128,7 @@
 {{--Homepage Feature--}}
     <div class="container">
 
+        <div id="product-section" style="height: 50px"></div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                 <div class="product-service">

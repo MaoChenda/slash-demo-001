@@ -1,4 +1,5 @@
 @extends('userpage.main')
+@section('title', 'News')
 @section('content')
 
     <div class="newsPicture">

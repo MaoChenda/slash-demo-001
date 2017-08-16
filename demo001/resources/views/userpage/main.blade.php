@@ -5,17 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>@yield('title') | Yellow Sea Logistic</title>
+        <link rel="icon" type="image/png" href="{{asset('web-comp/y.png')}}">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
         <!-- Styles -->
-        <script src="{{asset('userpage')}}"></script>
+        {{--<script src="{{asset('userpage')}}"></script>--}}
         <script type="text/javascript" src="{{asset('bootstrap-3.3.7-dist/js/jquery-3.2.1.js')}}"></script>
         <script type="text/javascript" src="{{asset('bootstrap-3.3.7-dist/js/bootstrap.min.js')}}"></script>
         <link rel="stylesheet" type="text/css" href="{{asset('bootstrap-3.3.7-dist/css/bootstrap.min.css')}}">
         <link type="text/css" rel="stylesheet" href="{{asset('css/home.css')}}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         {{--Social Media button--}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,28 +44,28 @@
 
 
         <div class=" collapse navbar-collapse navbar-right " id="myNavbar" style="background-color:  #ffcc00;" >
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" id="menu">
                 <li id="myList" class="hidden-xs ">
                     <a href="#"></a>
                 </li>
                 <li class="nav-item" >
-                    <a class="navbar-link active" href="{{asset('/home')}}">Home</a>
+                    <a class="navbar-link {{ Html::clever_link('home') }}" href="{{url('/home')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-link" href="#">ABOUT US</a>
+                    <a class="navbar-link" href="/home#about" id="aboutus">ABOUT US</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="navbar-link" href="#">PRODUCT & SERVICE</a>
+                    <a class="navbar-link" href="/home#product-section" id="product">PRODUCT & SERVICE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-link" href="{{asset('/news')}}">NEWS</a>
+                    <a class="navbar-link {{ Html::clever_link('news') }}" href="{{url('/news')}}">NEWS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-link" href="{{asset('/quote request')}}">QUOTE REQUEST</a>
+                    <a class="navbar-link {{ Html::clever_link('quoteRequest') }}" href="{{url('/quoteRequest')}}">QUOTE REQUEST</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-link" href="{{asset('/contact us')}}">CONTACT US</a>
+                    <a class="navbar-link {{ Html::clever_link('contactus') }}" href="{{url('/contactus')}}">CONTACT US</a>
                 </li>
             </ul>
         </div>
@@ -106,5 +108,32 @@
         </div>
 
     </div> <!--end class resturantFooter-->
+
+    <script>
+        $(document).ready(function() {
+            $("#aboutus,#product").on('click', function () {
+                if (this.hash !== "") {
+//                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate
+                    ({
+                        scrollTop: $(hash).offset().top
+                        }, 950, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+        $(document).ready(function(){
+            $("#menu li a").click(function(){
+//                console.log($('#menu li a'));
+                $("a").each(function(){
+                    $('a').removeClass('active');
+                });
+                $(this).addClass('active');
+            });
+        });
+    </script>
 
     </body>

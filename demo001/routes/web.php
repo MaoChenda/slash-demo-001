@@ -16,5 +16,18 @@ Route::get('/', function () {
 });
 Route::get('/home','homeController@home');
 Route::get('/news','homeController@news');
-Route::get('/quote request','homeController@quoteRequest');
-Route::get('/contact us', 'homeController@contactUs');
+Route::get('/quoteRequest','homeController@quoteRequest');
+Route::get('/contactus', 'homeController@contactUs');
+Html::macro('clever_link', function ($route){
+    $path = Request::path();
+    $focus = "";
+
+    if ( $route == $path){
+        $focus = "active";
+    }
+    else{
+        $focus = "";
+    }
+    return $focus;
+
+});
