@@ -463,12 +463,8 @@ nav{
 .customHeaderStyle{
     font-weight: 100;
 }
-.formContactus{
-    padding: 50px;
-}
 .formContactUs .form-group {
     padding-bottom: 20px;
-    margin-right: 20px;
     margin-bottom: 1rem;
 }
 .quoteSubmit{
@@ -492,11 +488,21 @@ nav{
 
 /*Design page Contact Us*/
 .contactusPicture .jumbotron{
-    width: 100%;
-    height: 620px;
     margin-bottom: 50px;
 }
-.contactusHeader h2{
+@media screen and (max-width: 767px){
+    .contactusPicture .jumbotron{
+        width: 100%;
+        height: 290px;
+    }
+}
+@media screen and (min-width: 768px){
+    .contactusPicture .jumbotron{
+        width: 100%;
+        height: 620px;
+    }
+}
+    .contactusHeader h2{
     text-align: center;
     color: #ffcc00;
 }
@@ -512,12 +518,10 @@ nav{
     text-align: center;
 }
 .googleButton{
+    text-align: center;
     margin-top: 40px;
     margin-bottom: 50px;
 }
-/*.googleButton h4, p{*/
-    /*text-align: center;*/
-/*}*/
 .userInfo{
     margin-top: 50px;
 }

@@ -89,10 +89,10 @@
                                 <span style="color: #ffcc00">*</span>
                             </label>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6">
                             <input class="form-control" type="text" name="cargoWeight" id="cargoWeight">
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4" style="margin-left: -20px">
+                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6" style="margin-left: -20px">
                             KGs per container
                         </div>
                     </div>

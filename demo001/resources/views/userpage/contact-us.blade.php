@@ -22,21 +22,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="glyphicon glyphicon-earphone" style="margin-left: 50px; color: #ffcc00; font-size: 50px"></div>
+                    <div class="glyphicon glyphicon-earphone" style=" color: #ffcc00; font-size: 50px"></div>
                     <h4><b>Any Question?</b></h4>
                     <p>+855 61 333 117 <br>
                         +855 61 333 500
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="glyphicon glyphicon-envelope" style="margin-left: 50px; color: #ffcc00; font-size: 50px"></div>
+                    <div class="glyphicon glyphicon-envelope" style=" color: #ffcc00; font-size: 50px"></div>
                     <h4><b>Write Us A Message</b></h4>
                     <a href="#">
                         <p>csmng@yellowsea.asia</p>
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="glyphicon glyphicon-map-marker" style="margin-left: 50px; color: #ffcc00; font-size: 50px"></div>
+                    <div class="glyphicon glyphicon-map-marker" style=" color: #ffcc00; font-size: 50px"></div>
                     <h4><b>Find Us On Map</b></h4>
                     <p>#G26, Street Gold, Sangkat Tumnub Terk, Khan Chamkarmon, Phnom Penh</p>
                 </div>
