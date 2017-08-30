@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
         <!-- Styles -->
-        {{--<script src="{{asset('userpage')}}"></script>--}}
         <script type="text/javascript" src="{{asset('bootstrap-3.3.7-dist/js/jquery-3.2.1.js')}}"></script>
         <script type="text/javascript" src="{{asset('bootstrap-3.3.7-dist/js/bootstrap.min.js')}}"></script>
         <link rel="stylesheet" type="text/css" href="{{asset('bootstrap-3.3.7-dist/css/bootstrap.min.css')}}">
@@ -41,8 +40,6 @@
             </div>
         </div>
 
-
-
         <div class=" collapse navbar-collapse navbar-right " id="myNavbar" style="background-color:  #ffcc00;" >
             <ul class="nav navbar-nav" id="menu">
                 <li id="myList" class="hidden-xs ">
@@ -54,7 +51,6 @@
                 <li class="nav-item">
                     <a class="navbar-link" href="/home#about" id="aboutus">ABOUT US</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="navbar-link" href="/home#product-section" id="product">PRODUCT & SERVICE</a>
                 </li>
@@ -109,31 +105,6 @@
 
     </div> <!--end class resturantFooter-->
 
-    <script>
-        $(document).ready(function() {
-            $("#aboutus,#product").on('click', function () {
-                if (this.hash !== "") {
-//                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate
-                    ({
-                        scrollTop: $(hash).offset().top
-                        }, 950, function () {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-
-        $(document).ready(function(){
-            $("#menu li a").click(function(){
-//                console.log($('#menu li a'));
-                $("a").each(function(){
-                    $('a').removeClass('active');
-                });
-                $(this).addClass('active');
-            });
-        });
-    </script>
+    <script src="{{mix('js/home.js')}}" type="text/javascript"></script>
 
     </body>
